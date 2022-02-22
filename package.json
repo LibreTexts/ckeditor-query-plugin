@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
-    "ckeditor4": "^4.16.1",
+    "ckeditor4": "^4.17.0",
     "core-js": "^3.6.5",
     "glob-parent": "5.1.2",
     "hosted-git-info": "3.0.8",
