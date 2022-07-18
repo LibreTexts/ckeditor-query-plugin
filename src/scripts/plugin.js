@@ -123,7 +123,7 @@ const registerPlugin = () => {
         label: 'Insert Adapt',
         command: 'openLibretextsAdaptDialog',
         toolbar: 'insert',
-        icon: 'https://d2xt85ly3365wl.cloudfront.net/a4d94597-a806-4707-9756-b469103292a2/assets/img/favicon.png',
+        icon: 'https://cdn.libretexts.net/Icons/adapt.png',
       });
     },
   });
