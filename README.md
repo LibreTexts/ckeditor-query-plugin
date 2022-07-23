@@ -31,23 +31,7 @@ And find test page [here](https://query.libretexts.org/Development/Query_Plugin_
 
 ### What does this plugin do?
 
-This plugin is used specifically on Libretexts only. The Query plugin embeds an interactive problem in the textbook by adding the following html/js code:
-
-```html
-<div class="box-query">
-  <p class="box-legend"><span>Query \\(\\PageIndex{1}\\)</span></p>
-  <p class="mt-script-comment">Embed QUERY Assessment</p>
-  <pre class="script">template('query',{'PageID':'${pageId}'});</pre>
-</div>
-```
-
-The javascript code `template('query',{'PageID':'${pageId}'});` is managed by the Libretexts side when the textbooks are rendered. This plugin only places the HTML into the textbook and nothing else.
-
-If the `pageId` is valid, you should see something like this:
-
-![working example](document_visuals/query_example.png)
-
-Similarly, the Adapt plugin embeds an interactive problem in the textbook by adding the following html/js code:
+This plugin is used specifically on Libretexts only. The Adapt plugin embeds an interactive problem in the textbook by adding the following html/js code:
 
 ```html
 <div class="box-query">
@@ -65,11 +49,11 @@ If the `ID` is valid, you should see something like this:
 
 ### How to use the plugin?
 
-In the editor view, the question mark logo on the editor toolbar will access the Query plugin, while the circular arrows will access the Adapt plugin:
+In the editor view, the circular arrows will access the Adapt plugin:
 
 ![toolbar](document_visuals/toolbar.png)
 
-Clicking on either will open a new dialog that prompts you to enter a number which is the `pageId` (Query) or `ID`(Adapt) for the interactive problem to embed. Then, you can click OK and the HTML will be inserted into the editor.
+Clicking on the icon will open a new dialog that prompts you to enter a number which is the `ID`(Adapt) for the interactive problem to embed. Then, you can click OK and the HTML will be inserted into the editor.
 
 ### How to understand the code
 
