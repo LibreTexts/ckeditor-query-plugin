@@ -9,7 +9,5 @@ import registerPlugin from './plugin';
 // CKeditor is initialized on Libretexts page
 LibreEditor.queryPlugin = (config) => {
   registerPlugin();
-  config.toolbar[12].push('openLibretextsQueryDialog');
   config.toolbar[12].push('openLibretextsAdaptDialog');
 };
-
