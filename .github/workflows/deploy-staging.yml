@@ -16,7 +16,7 @@ jobs:
       with:
         key: ${{ secrets.STAGING_SSH_KEY }}
         name: id_rsa # optional
-        known_hosts: github.com
+        known_hosts: test.libretexts.org
     - uses: actions/checkout@v2
     - name: run deploy script
       run: sh ./bin/deploy.sh
